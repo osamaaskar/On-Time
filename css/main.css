@@ -1,0 +1,472 @@
+/*
+theme name is :On Time
+theme coder and design:Osama Askar
+date :21-4-2019
+*/
+/*--------------------Start Global------------*/
+
+html,body{
+    margin:0;
+    padding: 0;
+
+    
+}
+body{
+    
+    color: #868c96;
+    font-family: 'Prompt', sans-serif;
+}
+.section {
+    padding: 40px 0;
+}
+.b-active{
+    color:#ff4b68 !important;
+}
+.section-content .header-section{
+    position: relative;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #56dba6 0%, #ff0 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+ .section-content .header-section::before{
+    position: absolute;
+    content: "";
+    width:50px;
+    height: 5px;
+    background-color: #57dba6;
+    right: 0;
+    top:25px;
+}
+ .section-content .desc-section{
+     font-size: 18px;
+     color:#777;
+}
+/*--------------------End Global------------*/
+
+/*-------------------Start Header------------*/
+.navbar-brand img{
+    max-width:50px;
+    max-height: 30px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #082428;
+    font-size: 13px;
+    margin-left: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease-in-out;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:#eae649;
+    font-weight: bold;
+    transform: translateY(3px);
+}
+
+.navbar-dark.sticky{
+    background-color: #57dba6;
+}
+@media(max-width:992px){
+    .navbar-dark{
+        background-color: #57dba6;
+    }
+}
+/*-------------------End Header------------*/
+
+/*-------------------Start Slider------------*/
+.swiper-container {
+    width: 100%;
+    position: relative;
+  }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+.slide1{
+      background-image: url('../images/on time back.png');
+      background-position: center center;
+      background-size: cover;
+  }
+  .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
+      margin:10px 0 !important; 
+  }
+  .swiper-pagination-bullet-active{
+      background: #c3dc64 !important;
+  }
+  .swiper-container .header-content{
+      margin-left:40%;
+  }
+  .swiper-container .header-content h1{
+      color:#082428;
+      text-transform: uppercase;
+      font-weight: bold;
+  }
+  .swiper-container .header-content h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #082428;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 2px;
+    line-height: 1.7;
+}
+@media(max-width:576px){
+    .swiper-container .header-content{
+        margin-left:10%;
+    }
+    .swiper-pagination-bullet-active{
+        background: #57dba6 !important
+    }
+    .swiper-container .header-content h1{
+        font-size: 25px;
+    }
+    .swiper-container .header-content h2{
+        font-size: 13px;
+    }
+}
+
+.social-media{
+    position: absolute;
+    left:160px;
+    bottom: 0;
+}
+.social-media ul li{
+    transition: all .5s ease-in-out;
+}
+.social-media ul li:hover{
+    color:#082428;
+}
+@media(max-width:992px){
+    .social-media{
+        bottom: 0;
+    }
+    .social-media ul li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+/*--------------------End Slider------------*/
+
+/*--------------------Start Clients------------*/
+.our-clients .section-content{
+    max-width: 50%;
+}
+@media(max-width:768px){
+    .our-clients .section-content{
+        max-width: 100%;
+    }
+}
+.our-clients .our-client{
+    padding: 15px 0;
+}
+.our-clients .our-client .owl-carousel img{
+    width:100%;
+    opacity: .4;
+    transition:all .3s ease-in-out;
+}
+.our-clients .our-client .owl-carousel img:hover{
+    opacity: 1;
+}
+@media(max-width:768px){
+    .our-clients .section-content .desc-section{
+        font-size: 15px;
+    }
+}
+
+/*--------------------End Clients------------*/
+/*--------------------Start AboutUs------------*/
+.about-us  .section-content .desc-section{
+    line-height: 1.8;
+}
+.about-us .about-photo img {
+    max-width:100%;
+    height: auto;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+.about-us .about-photo img:hover{
+    outline:#ff4b68 solid 10px;
+    outline-offset: 12px;
+}
+@media(max-width:768px){
+    .about-us .section-content .desc-section{
+        font-size: 15px;
+    }
+    .about-us .about-photo img:hover{
+        outline-offset: 5px;
+    }
+}
+/*--------------------End AboutUs------------*/
+
+/*--------------------Start Services------------*/
+.services{
+    background-image: url('../images/time.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+.services .section-content {
+    max-width:50%;
+}
+@media(max-width:768px){
+    .services .section-content {
+        max-width:100%;
+    }
+}
+.services .section-content .header-section{
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.services .section-content .header-section::before{
+    background: #fff;
+}
+.services .section-content .desc-section{
+    color:#eee;
+    line-height: 1.7;
+}
+.services .services-info .services-photo img{
+    width:100%;
+    position: relative;
+}
+.services .services-info h3{
+    position: absolute;
+    top: 36px;
+    left: 100px;
+    font-size: 15px;
+    max-width: 80px;
+    font-weight: 600;
+    color:#122d30;
+    text-transform:uppercase;
+}
+@media(max-width:768px){
+    .services .section-content .desc-section {
+        font-size: 14px;
+    }
+}
+    
+/*--------------------End Services------------*/
+/*--------------------Start Mechanism------------*/
+.mechanism {
+    background-image: url('../images/mec back.png');
+    background-position: center center;
+    background-size: cover;
+}
+.mechanism .section-content .mech-section{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #56dba6 0%, #ff0 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+}
+.mechanism .mec-info .mec-photo img{
+    max-width:100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 30px;
+}
+.mechanism .mec-info span{
+    position: absolute;
+    display: block;
+    right: 42px;
+    top: 20px;
+    background-image:linear-gradient(to right, #56dba6 0%, #ff0 100%); 
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color:#122d30;
+    font-weight: 600;
+}
+@media(max-width:380px){
+    .mechanism .mec-info span{
+        right: 79px;
+    }
+}
+@media(min-width:380px) and (max-width:480px){
+    .mechanism .mec-info span{
+        right:104px;
+    }
+}
+@media(min-width:576px) and (max-width:768px){
+    .mechanism .mec-info span{
+        right: 169px;
+    }
+}
+@media(min-width:768px) and (max-width:992px){
+    .mechanism .mec-info span{
+        right: 77px;
+    }
+}
+@media(min-width:993px) and (max-width:1024px)
+{
+    .mechanism .mec-info span{
+        right: 19px;
+    }
+}
+.mechanism .mec-info  h3{
+    font-size:18px;
+    color:#666;
+    text-transform: capitalize;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.mechanism .manager-items{
+    padding: 100px 0;
+}
+.mechanism .manager-info{
+    display: flex;
+}
+.mechanism .manager-info .manager-photo img{
+    width:100%;
+    height: auto;
+    
+}
+.mechanism .manager-info .manager-details{
+    padding: 10px 15px;
+    position: relative; 
+}
+.mechanism .manager-info .manager-details::before{
+    position: absolute;
+    content:"";
+    width: 40px;
+    height: 5px;
+    background-color: #eae649;
+    right: 0;
+    top:0;
+}
+.mechanism .manager-info .manager-details h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:#122d30;
+}
+.mechanism .manager-info .manager-details p{
+    line-height: 1.7;
+}
+/*--------------------End Mechanism------------*/
+/*--------------------Start Work------------*/
+.work{
+    background-color: #eae649;
+}
+.work .section-content{
+    max-width:50%;
+}
+@media(max-width:768px){
+    .work .section-content{
+        max-width:100%
+    }
+    .work .section-content .desc-section{
+        font-size: 15px;
+    }
+}
+.work .section-content .header-section{
+    background: linear-gradient(to right, #112d30 0%, #112d30 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.work .section-content .header-section::before{
+    background-color: #112d30;
+}
+.work .work-item{
+    padding: 40px 0;
+}
+.work .work-item .work-photo img{
+    width:100%;
+    margin-bottom: 20px;
+    transition: all .5s ;
+}
+.work .work-item .work-photo img:hover{
+    border:2px solid #fff;
+}
+.work .work-item .work-desc p{
+    color:#777;
+}
+.work .work-item .work-detail{
+    position: relative;
+}
+.work .work-item .work-detail::before{
+    position: absolute;
+    content:"";
+    width:40px;
+    height: 5px;
+    right: 15px;
+    bottom: 0;
+    background-color: #112d30;
+}
+/*--------------------End Work------------*/
+
+/*--------------------Start Footer------------*/
+.footer{
+    background-color: #112d30;
+}
+.footer .footer-content ul li{
+    display: inline-block;
+    padding-right: 30px;
+}
+.footer .footer-content ul li:first-child{
+    padding-right: 50px;
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+}
+.footer .footer-content p{
+    color:#bbb8b8;
+    font-weight: 600;
+    font-size: 20px;
+}
+.footer  span{
+    color:#bbb8b8;
+    font-size:18px;
+    text-transform: capitalize;
+    float:right;
+}
+@media(max-width:768px){
+    .footer span{
+        float: left;
+        margin-top:20px;
+    }
+}
+/*--------------------End Footer------------*/
+
+/*Start Button Scroll*/
+.sroll-button i{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color:#57dba6;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color:#eae649;
+    border: 2px solid #57dba6;
+    font-size: 20px;
+    display: none;
+    cursor: pointer
+}
+/*End Button Scroll*/
+
